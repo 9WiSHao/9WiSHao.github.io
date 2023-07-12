@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://wishao.me/about/"/>
+  <link rel="canonical" href="http://wishao.me/2023/07/12/day3-vue-pinia/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,20 +34,25 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于 - WiSHao'blog</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="终于开始记点东西 - WiSHao - WiSHao'blog">
+  <title>day3 Vue Pinia - WiSHao'blog</title>
+  <meta name="keywords" content="前端,暑假培训,笔记,vue,自学,null">
+  <meta desc name="description" content="Vue 状态管理库 Pinia，非常好用 - WiSHao - WiSHao'blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="WiSHao&#39;blog">
-<meta property="og:url" content="http://wishao.me/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="day3 Vue Pinia">
+<meta property="og:url" content="http://wishao.me/2023/07/12/day3-Vue-Pinia/index.html">
 <meta property="og:site_name" content="WiSHao&#39;blog">
-<meta property="og:description" content="我 小前端一个，被基友坑入门，一入门深似海，但是意外还挺喜欢，就一直在学  音游人，这是我的osu主页，主玩戳泡泡，球球osu大申带带   其他没什么可说的。虽然说现在的互联网上根本没有隐私可言，但是我也没有义务在这做我的简历。为我留下最后的一份神秘，好吗？若想知道更多，可以去翻我的社交账号。 碎碎念虽说自高中毕业的暑假就想搭建自己的博客了，但是初期实在是技术不足，连教程看着都费劲，就不了了之。后">
+<meta property="og:description" content="Vue 状态管理库 Pinia，非常好用">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-07-11T02:15:52.215Z">
-<meta property="article:modified_time" content="2023-07-11T02:15:52.215Z">
+<meta property="article:published_time" content="2023-07-12T03:26:14.000Z">
+<meta property="article:modified_time" content="2023-07-12T03:28:03.422Z">
 <meta property="article:author" content="WiSHao">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="暑假培训">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="自学">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2065,6 +2070,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
         
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self"  href="/" onclick="return false;" title="toc"></a></li>
+        
       </ul>
     </div>
 		<div class="nav-main">
@@ -2324,7 +2331,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper docs search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/img/%E6%88%91%E4%BD%9B%E6%85%88%E6%82%B2.jpg"></div>
 
@@ -2385,9 +2392,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-<div id="l_main" class=' no_sidebar'>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-docs" id="docs" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://wishao.me/about/index.html">
+<div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://wishao.me/2023/07/12/day3-Vue-Pinia/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="WiSHao'blog">
   </span>
@@ -2407,24 +2414,129 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        day3 Vue Pinia
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">WiSHao</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/">vue学习</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
       </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">vue学习</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-07-12T11:26:14+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年7月12日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：528 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：2 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="lc-pv" data-title="day3 Vue Pinia" data-path="/2023/07/12/day3-Vue-Pinia/">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="我"><a href="#我" class="headerlink" title="我"></a>我</h2><ul>
-<li><p>小前端一个，被基友坑入门，一入门深似海，但是意外还挺喜欢，就一直在学</p>
-</li>
-<li><p>音游人，这是<a target="_blank" rel="noopener" href="https://osu.ppy.sh/users/18025476">我的osu主页</a>，主玩戳泡泡，球球osu大申带带</p>
-</li>
-</ul>
-<p>其他没什么可说的。虽然说现在的互联网上根本没有隐私可言，但是我也没有义务在这做我的简历。为我留下最后的一份神秘，好吗？若想知道更多，可以去翻我的社交账号。</p>
-<h3 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>虽说自高中毕业的暑假就想搭建自己的博客了，但是初期实在是技术不足，连教程看着都费劲，就不了了之。后来学习了一些知识，却深陷我的强迫症，找不到我满意的主题。就像历史上许多重大事件都是由意外推动的一样，某天有不可抗力突然给了我一晚上的限制让我必须搭建好我的博客，我居然在几小时内完成了主题的挑选，不可思议。</p>
-<p>差不多就这样了，或许我写的东西会很水，无所谓了，反正没人看，有个地方放点东西也挺好，也没想给谁看。如果你无意间翻看到了我的博客，恭喜你，有缘人，或许可以加一下我的社交账号？</p>
+    <p>Vue 状态管理库 Pinia，非常好用</p>
+<span id="more"></span>
+
+<h3 id="Pinia"><a href="#Pinia" class="headerlink" title="Pinia"></a>Pinia</h3><p>Pinia 是一款轻量级的 Vue 状态管理库，可以使用它跨组件或页面共享状态。</p>
+<p>相当于组件的组件，可以用来定义一些共用的东西，也可以用来传递数据。</p>
+<p>能用vue3的组合式语法来写，与本来的组件完全一致，非常直观好用</p>
+<h4 id="1-引入"><a href="#1-引入" class="headerlink" title="1. 引入"></a>1. 引入</h4><p>先安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i pinia</span><br></pre></td></tr></table></figure>
+
+<p>然后在main.js引入</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; createPinia &#125; <span class="keyword">from</span> <span class="string">&#x27;pinia&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">createApp</span>(<span class="title class_">App</span>)</span><br><span class="line">app.<span class="title function_">use</span>(pinia)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-基础使用"><a href="#2-基础使用" class="headerlink" title="2. 基础使用"></a>2. 基础使用</h4><p>一般来说，先在src文件夹里创建一个stores文件夹，专门存放pinia组件</p>
+<p>比如定义一个计数器的组件，使用了组合式语法，定义一个响应式数据和一个方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; defineStore &#125; <span class="keyword">from</span> <span class="string">&#x27;pinia&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; ref &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> useCounterStore = <span class="title function_">defineStore</span>(<span class="string">&#x27;counter&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> count = <span class="title function_">ref</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">increment</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">        count.<span class="property">value</span>++;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        count,</span><br><span class="line">        increment,</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>步骤是先引入<code>defineStore</code>，使用它定义一个组件供导出使用</p>
+<p>然后在vue文件里导入<code>useCounterStore</code>，使用变量接收，就能像这样使用了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line">    import &#123; useCounterStore &#125; from &#x27;./stores/counter&#x27;;</span><br><span class="line">    const counterStore = useCounterStore();</span><br><span class="line">    console.log(counterStore);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;button @click=&quot;counterStore.increment&quot;&gt;&#123;&#123; counterStore.count &#125;&#125;&lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-getters实现"><a href="#3-getters实现" class="headerlink" title="3. getters实现"></a>3. getters实现</h4><p>使用<code>computed</code>计算属性实现，然后导出，比如</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> doubleCount = <span class="title function_">computed</span>(<span class="function">() =&gt;</span> count.<span class="property">value</span> * <span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-异步请求"><a href="#4-异步请求" class="headerlink" title="4. 异步请求"></a>4. 异步请求</h4><p>比如网络请求axios，直接在store里面写，写完导出，就能直接在引入的地方用了</p>
+<h4 id="5-解构赋值"><a href="#5-解构赋值" class="headerlink" title="5. 解构赋值"></a>5. 解构赋值</h4><p>看之前的代码，引入使用的时候每次都要写<code>counterStore.xxx</code>，很啰嗦。</p>
+<p>可以使用解构赋值来赋值给变量</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;count, doubleCount&#125; = <span class="title function_">storeToRefs</span>(counterStore)</span><br><span class="line"><span class="comment">// 注意，这个方法只能获取到响应式数据，没法获得方法</span></span><br><span class="line"><span class="comment">// 获取方法，比如increment，直接不用这个函数，直接解构赋值就行了（因为是引用值）</span></span><br></pre></td></tr></table></figure>
+
+<p>注意要用它的<code>storeToRefs</code>方法，不然直接写的话会丢失响应式数据的特性。获取到的是响应式对象</p>
 
   </div>
   
@@ -2448,6 +2560,95 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
       
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-12T11:28:03+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年7月12日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：528 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：2 分钟</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wishao.me/2023/07/12/day3-Vue-Pinia/&title=day3 Vue Pinia - WiSHao'blog&summary=Vue 状态管理库 Pinia，非常好用"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://wishao.me/2023/07/12/day3-Vue-Pinia/&title=day3 Vue Pinia - WiSHao'blog&summary=Vue 状态管理库 Pinia，非常好用"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://wishao.me/2023/07/12/day3-Vue-Pinia/&title=day3 Vue Pinia - WiSHao'blog&summary=Vue 状态管理库 Pinia，非常好用"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%89%8D%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>前端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%9A%91%E5%81%87%E5%9F%B9%E8%AE%AD/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>暑假培训</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>笔记</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/vue/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>vue</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%87%AA%E5%AD%A6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>自学</p></a></div>
+  <span hidden itemprop="keywords">前端 暑假培训 笔记 vue 自学</span>
+
+
+        
+      
     </div>
     <!-- Custom Files bottomMeta begin -->
     
@@ -2458,6 +2659,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
 
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/07/11/day2js%E5%9F%BA%E7%A1%80%E5%A4%8D%E4%B9%A0/'>
+          <p class='title'>day2 js基础复习<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>复习原生 js 知识
+
+
+1. this 指向问题里的 call apply bindcallcall是一个方法，它的作用是改变函数的this指向。第一个参数是用于替换this的值，后续的参数是...</p>
+        </a>
+      
+    </div>
   
   <!-- Custom Files postEnd begin-->
   
@@ -2470,7 +2684,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/about/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/07/12/day3-Vue-Pinia/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2488,8 +2702,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
 
+  
+    
+    
+      
+    
+  
+
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile webinfo " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Pinia"><span class="toc-text">Pinia</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%BC%95%E5%85%A5"><span class="toc-text">1. 引入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8"><span class="toc-text">2. 基础使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-getters%E5%AE%9E%E7%8E%B0"><span class="toc-text">3. getters实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E5%BC%82%E6%AD%A5%E8%AF%B7%E6%B1%82"><span class="toc-text">4. 异步请求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="toc-text">5. 解构赋值</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
 
 </div>
 
@@ -2541,7 +2782,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3286,7 +3527,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WiSHao'blog","url":"http://wishao.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/","sameAs":["https://github.com/volantis-x"],"description":"终于开始记点东西"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://wishao.me/","name":"WiSHao'blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WiSHao'blog","url":"http://wishao.me/","keywords":null,"description":"终于开始记点东西","author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/","description":"终于开始记点东西"},"publisher":{"@type":"Organization","name":"WiSHao'blog","url":"http://wishao.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://wishao.me?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"关于","description":"终于开始记点东西","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://wishao.me/about/index.html"},"author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/"},"publisher":{"@type":"Organization","name":"WiSHao'blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://wishao.me/about/index.html","wordCount":0,"datePublished":"2023-07-11T02:15:52.215Z","dateModified":"2023-07-11T02:15:52.215Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WiSHao'blog","url":"http://wishao.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/","sameAs":["https://github.com/volantis-x"],"description":"终于开始记点东西"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://wishao.me/","name":"WiSHao'blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.me/categories/web前端/","name":"web前端"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.me/categories/web前端/vue学习/","name":"vue学习"}},{"@type":"ListItem","position":3,"item":{"@id":"http://wishao.me/2023/07/12/day3-Vue-Pinia/","name":"day3 Vue Pinia"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WiSHao'blog","url":"http://wishao.me/","keywords":null,"description":"终于开始记点东西","author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/","description":"终于开始记点东西"},"publisher":{"@type":"Organization","name":"WiSHao'blog","url":"http://wishao.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://wishao.me?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"day3 Vue Pinia","description":"Vue 状态管理库 Pinia，非常好用","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://wishao.me/2023/07/12/day3-Vue-Pinia/"},"author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/"},"publisher":{"@type":"Organization","name":"WiSHao'blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://wishao.me/2023/07/12/day3-Vue-Pinia/","wordCount":20,"datePublished":"2023-07-12T03:26:14.000Z","dateModified":"2023-07-12T03:28:03.422Z","articleSection":"web前端","keywords":"前端,暑假培训,笔记,vue,自学","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
