@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://wishao.me/2023/07/10/紧急事件/"/>
+  <link rel="canonical" href="http://wishao.me/2023/07/21/初识canvas/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,21 +34,26 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>紧急事件 - WiSHao'blog</title>
-  <meta name="keywords" content="紧急事件,null">
-  <meta desc name="description" content="终于开始记点东西 - WiSHao - WiSHao'blog">
+  <title>初识canvas - WiSHao'blog</title>
+  <meta name="keywords" content="前端,笔记,自学,原生js,canvas,游戏,null">
+  <meta desc name="description" content="为了还原小时候玩过的一个flash游戏，决定学点html5游戏制作。找了个外网教程，先从canvas元素开始 - WiSHao - WiSHao'blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="紧急事件">
-<meta property="og:url" content="http://wishao.me/2023/07/10/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/index.html">
+<meta property="og:title" content="初识canvas">
+<meta property="og:url" content="http://wishao.me/2023/07/21/%E5%88%9D%E8%AF%86canvas/index.html">
 <meta property="og:site_name" content="WiSHao&#39;blog">
-<meta property="og:description" content="晚上才看见暑假里要每日写总结传博客，遂急忙搭建此站。目前一切都是临时的，后面再做理会。大改的东西有很多，顶部栏完全没弄，访问统计也没弄，友链，关于我之类的都还没，纯毛坯房，后面再加">
+<meta property="og:description" content="为了还原小时候玩过的一个flash游戏，决定学点html5游戏制作。找了个外网教程，先从canvas元素开始">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-07-09T18:08:30.000Z">
-<meta property="article:modified_time" content="2023-07-10T14:25:29.000Z">
+<meta property="article:published_time" content="2023-07-21T11:44:02.000Z">
+<meta property="article:modified_time" content="2023-07-21T12:25:16.822Z">
 <meta property="article:author" content="WiSHao">
-<meta property="article:tag" content="紧急事件">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="自学">
+<meta property="article:tag" content="原生js">
+<meta property="article:tag" content="canvas">
+<meta property="article:tag" content="游戏">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2390,7 +2395,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://wishao.me/2023/07/10/紧急事件/">
+  <link itemprop="mainEntityOfPage" href="http://wishao.me/2023/07/21/初识canvas/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="WiSHao'blog">
   </span>
@@ -2411,7 +2416,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        紧急事件
+        初识canvas
       </h1>
       <div class='new-meta-box'>
         
@@ -2430,10 +2435,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E5%BB%BA%E7%AB%99%E4%B9%8B%E5%88%9D/">建站之初</a>
+    <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/html5%E6%B8%B8%E6%88%8F/">html5游戏</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E5%BB%BA%E7%AB%99%E4%B9%8B%E5%88%9D/" itemprop="url"><span itemprop="name">建站之初</span></a>
+        <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/web%E5%89%8D%E7%AB%AF/html5%E6%B8%B8%E6%88%8F/" itemprop="url"><span itemprop="name">html5游戏</span></a>
       </span>
     
   </div>
@@ -2442,10 +2451,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-07-10T02:08:30+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-07-21T19:44:02+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年7月10日</p>
+    <p>发布于：2023年7月21日</p>
   </a>
 </div>
 
@@ -2456,7 +2465,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：80 字</p>
+      <p>字数：367 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2478,7 +2487,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="紧急事件" data-path="/2023/07/10/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/">
+      <span id="lc-pv" data-title="初识canvas" data-path="/2023/07/21/%E5%88%9D%E8%AF%86canvas/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2500,7 +2509,29 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="晚上才看见暑假里要每日写总结传博客，遂急忙搭建此站。"><a href="#晚上才看见暑假里要每日写总结传博客，遂急忙搭建此站。" class="headerlink" title="晚上才看见暑假里要每日写总结传博客，遂急忙搭建此站。"></a>晚上才看见暑假里要每日写总结传博客，遂急忙搭建此站。</h2><p>目前一切都是临时的，后面再做理会。大改的东西有很多，顶部栏完全没弄，访问统计也没弄，友链，关于我之类的都还没，纯毛坯房，后面再加</p>
+    <p>为了还原小时候玩过的一个flash游戏，决定学点html5游戏制作。找了个外网教程，先从canvas元素开始</p>
+<span id="more"></span>
+
+<h2 id="教程原地址"><a href="#教程原地址" class="headerlink" title="教程原地址"></a>教程原地址</h2><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=GFO_txvwK_c">JavaScript Game Development Course for Beginners - YouTube</a></p>
+<h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><h3 id="1-从精灵图动画开始"><a href="#1-从精灵图动画开始" class="headerlink" title="1. 从精灵图动画开始"></a>1. 从精灵图动画开始</h3><p>首先在html里引入canvas标签。然后在js中获取其DOM</p>
+<p>然后获取canvas上的所有方法。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ctx = canvas.<span class="title function_">getContext</span>(<span class="string">&#x27;2d&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>这里的参数代表canvas的属性，2d是2d画布。还有别的，可以做3d的东西</p>
+<p>下面这么写可以清除画布内容，前面两个参数是要清除的左上角起始点，后面是宽高，表示清除一个矩形</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctx.<span class="title function_">clearRect</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="variable constant_">CANVAS_WIDTH</span>, <span class="variable constant_">CANVAS_HEIGHT</span>)</span><br></pre></td></tr></table></figure>
+
+<p>创建一个存精灵图的对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> playerImage = <span class="keyword">new</span> <span class="title class_">Image</span>();</span><br></pre></td></tr></table></figure>
+
+<p>图片的传法，第一个是图片，2 3是图片起始点（左上角），4 5是图片拉伸大小</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ctx.<span class="title function_">drawImage</span>(playerImage, <span class="number">0</span>, <span class="number">0</span>, <span class="number">6000</span>, <span class="number">6000</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 还有九个参数的版本，sx sy是图片剪裁起始点，sw sh是剪裁长宽</span></span><br><span class="line"><span class="comment">// dx dy是图片放置位置起始点，dw dh是图片放置长宽</span></span><br><span class="line">ctx.<span class="title function_">drawImage</span>(playerImage, sx, sy, sw, sh, dx, dy, dw, dh);</span><br></pre></td></tr></table></figure>
+
+<p>创建一个帧，使用(其中animate传一个函数，可以放包含上面东西的，操纵canvas)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">requestAnimationFrame</span>(animate);</span><br></pre></td></tr></table></figure>
+
+<p>我们可以在animate里使用此函数调用animate函数自己，就能实现一直创建帧。</p>
+<p>在控制canvas的函数的参数里使用变量，并且让他们变化，就能实现基础的动画</p>
 
   </div>
   
@@ -2525,10 +2556,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-10T22:25:29+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-21T20:25:16+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年7月10日</p>
+    <p>更新于：2023年7月21日</p>
   </a>
 </div>
 
@@ -2539,7 +2570,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：80 字</p>
+      <p>字数：367 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2560,7 +2591,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wishao.me/2023/07/10/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/&title=紧急事件 - WiSHao'blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wishao.me/2023/07/21/%E5%88%9D%E8%AF%86canvas/&title=初识canvas - WiSHao'blog&summary=为了还原小时候玩过的一个flash游戏，决定学点html5游戏制作。找了个外网教程，先从canvas元素开始"
           
           >
           
@@ -2572,7 +2603,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://wishao.me/2023/07/10/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/&title=紧急事件 - WiSHao'blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://wishao.me/2023/07/21/%E5%88%9D%E8%AF%86canvas/&title=初识canvas - WiSHao'blog&summary=为了还原小时候玩过的一个flash游戏，决定学点html5游戏制作。找了个外网教程，先从canvas元素开始"
           
           >
           
@@ -2584,7 +2615,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://wishao.me/2023/07/10/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/&title=紧急事件 - WiSHao'blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://wishao.me/2023/07/21/%E5%88%9D%E8%AF%86canvas/&title=初识canvas - WiSHao'blog&summary=为了还原小时候玩过的一个flash游戏，决定学点html5游戏制作。找了个外网教程，先从canvas元素开始"
           
           >
           
@@ -2607,8 +2638,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>紧急事件</p></a></div>
-  <span hidden itemprop="keywords">紧急事件</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%89%8D%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>前端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>笔记</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%87%AA%E5%AD%A6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>自学</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%8E%9F%E7%94%9Fjs/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>原生js</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/canvas/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>canvas</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%B8%B8%E6%88%8F/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>游戏</p></a></div>
+  <span hidden itemprop="keywords">前端 笔记 自学 原生js canvas 游戏</span>
 
 
         
@@ -2626,18 +2657,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/07/10/day1%E5%88%9D%E8%AF%86vue/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>day1初识vue</p>
-          <p class='content'>第一天 学习了 vue 基础语法以及 vue3 的组合式 API
+      
+        <a class='next' href='/2023/07/15/day6-TypeScript%E5%85%A5%E9%97%A8/'>
+          <p class='title'>day6 TypeScript入门<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>TypeScript 基础再次学习
 
 
-一、vue 基础1、引入 vue基础不使用任何脚手架，直接在头部使用&lt;script src=&quot;https:/...</p>
-        </a>
-      
-      
-        <a class='next' href='/2023/07/09/hello-world/'>
-          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
+TypeScript 基础知识1, 安装使用全局安装
+1npm i -g TypeScript
+
+初始化文件夹配置文件
+1tsc --init
+
+一般使用...</p>
         </a>
       
     </div>
@@ -2653,7 +2685,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/07/10/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/07/21/%E5%88%9D%E8%AF%86canvas/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2695,7 +2727,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%9A%E4%B8%8A%E6%89%8D%E7%9C%8B%E8%A7%81%E6%9A%91%E5%81%87%E9%87%8C%E8%A6%81%E6%AF%8F%E6%97%A5%E5%86%99%E6%80%BB%E7%BB%93%E4%BC%A0%E5%8D%9A%E5%AE%A2%EF%BC%8C%E9%81%82%E6%80%A5%E5%BF%99%E6%90%AD%E5%BB%BA%E6%AD%A4%E7%AB%99%E3%80%82"><span class="toc-text">晚上才看见暑假里要每日写总结传博客，遂急忙搭建此站。</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%99%E7%A8%8B%E5%8E%9F%E5%9C%B0%E5%9D%80"><span class="toc-text">教程原地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#canvas"><span class="toc-text">canvas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%8E%E7%B2%BE%E7%81%B5%E5%9B%BE%E5%8A%A8%E7%94%BB%E5%BC%80%E5%A7%8B"><span class="toc-text">1. 从精灵图动画开始</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3496,7 +3528,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WiSHao'blog","url":"http://wishao.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/","sameAs":["https://github.com/volantis-x"],"description":"终于开始记点东西"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://wishao.me/","name":"WiSHao'blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.me/categories/建站之初/","name":"建站之初"}},{"@type":"ListItem","position":3,"item":{"@id":"http://wishao.me/2023/07/10/紧急事件/","name":"紧急事件"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WiSHao'blog","url":"http://wishao.me/","keywords":null,"description":"终于开始记点东西","author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/","description":"终于开始记点东西"},"publisher":{"@type":"Organization","name":"WiSHao'blog","url":"http://wishao.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://wishao.me?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"紧急事件","description":"终于开始记点东西","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://wishao.me/2023/07/10/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/"},"author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/"},"publisher":{"@type":"Organization","name":"WiSHao'blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://wishao.me/2023/07/10/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/","wordCount":0,"datePublished":"2023-07-09T18:08:30.000Z","dateModified":"2023-07-10T14:25:29.000Z","articleSection":"建站之初","keywords":"紧急事件","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WiSHao'blog","url":"http://wishao.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/","sameAs":["https://github.com/volantis-x"],"description":"终于开始记点东西"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://wishao.me/","name":"WiSHao'blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.me/categories/web前端/","name":"web前端"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.me/categories/web前端/html5游戏/","name":"html5游戏"}},{"@type":"ListItem","position":3,"item":{"@id":"http://wishao.me/2023/07/21/初识canvas/","name":"初识canvas"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WiSHao'blog","url":"http://wishao.me/","keywords":null,"description":"终于开始记点东西","author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/","description":"终于开始记点东西"},"publisher":{"@type":"Organization","name":"WiSHao'blog","url":"http://wishao.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://wishao.me?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"初识canvas","description":"为了还原小时候玩过的一个flash游戏，决定学点html5游戏制作。找了个外网教程，先从canvas元素开始","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://wishao.me/2023/07/21/%E5%88%9D%E8%AF%86canvas/"},"author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.me/"},"publisher":{"@type":"Organization","name":"WiSHao'blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://wishao.me/2023/07/21/%E5%88%9D%E8%AF%86canvas/","wordCount":54,"datePublished":"2023-07-21T11:44:02.000Z","dateModified":"2023-07-21T12:25:16.822Z","articleSection":"web前端","keywords":"前端,笔记,自学,原生js,canvas,游戏","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
