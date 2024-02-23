@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://wishao.fun/categories/web前端/react学习/"/>
+  
+  <link rel="canonical" href="http://wishao.fun/2024/02/23/解决github-pages部署vue单页面应用url定向错误问题/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,24 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>分类：react学习 - WiSHao'blog</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="终于开始记点东西 - WiSHao - WiSHao'blog">
+  <title>解决github pages部署vue单页面应用url定向错误问题 - WiSHao'blog</title>
+  <meta name="keywords" content="前端,vue,vite,github,null">
+  <meta desc name="description" content="github pages 在遇到根目录之外的 url，会直接去根目录找对应文件，找不到就 404这和期望部署的单页面 app 是不符的，我还是希望能用 vue router 的 history 模式，url 好看的单页面应用所幸 github pages 在找不到会先默认进入 404.html，所以可以通过这个页... - WiSHao - WiSHao'blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="WiSHao&#39;blog">
-<meta property="og:url" content="http://wishao.fun/categories/web%E5%89%8D%E7%AB%AF/react%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决github pages部署vue单页面应用url定向错误问题">
+<meta property="og:url" content="http://wishao.fun/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="WiSHao&#39;blog">
-<meta property="og:description" content="终于开始记点东西">
+<meta property="og:description" content="github pages 在遇到根目录之外的 url，会直接去根目录找对应文件，找不到就 404这和期望部署的单页面 app 是不符的，我还是希望能用 vue router 的 history 模式，url 好看的单页面应用所幸 github pages 在找不到会先默认进入 404.html，所以可以通过这个页面来重定向，解决这个问题">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-02-23T13:18:37.000Z">
+<meta property="article:modified_time" content="2024-02-23T14:03:54.532Z">
 <meta property="article:author" content="WiSHao">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="vite">
+<meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2324,7 +2330,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/img/%E6%88%91%E4%BD%9B%E6%85%88%E6%82%B2.jpg"></div>
 
@@ -2385,25 +2391,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://wishao.fun/2023/07/14/react入门/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://wishao.fun/2024/02/23/解决github-pages部署vue单页面应用url定向错误问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="WiSHao'blog">
   </span>
@@ -2412,76 +2402,291 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="终于开始记点东西">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/14/react%E5%85%A5%E9%97%A8/"  itemprop="url">
-        react入门
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <p>进行一个 react 的速通</p>
+    
+      <h1 class="title" itemprop="name headline">
+        解决github pages部署vue单页面应用url定向错误问题
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">WiSHao</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/">vue学习</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">vue学习</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg">
-            <meta itemprop="name" content="WiSHao">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-14T21:45:29+08:00">2023-07-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/react%E5%AD%A6%E4%B9%A0/">react学习</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/react%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">react学习</span></a>
-            </span>
+
+
           
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-02-23T21:18:37+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年2月23日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：4 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-        <div>
-          <a class='readmore' href='/2023/07/14/react%E5%85%A5%E9%97%A8/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+      <span id="lc-pv" data-title="解决github pages部署vue单页面应用url定向错误问题" data-path="/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>github pages 在遇到根目录之外的 url，会直接去根目录找对应文件，找不到就 404<br>这和期望部署的单页面 app 是不符的，我还是希望能用 vue router 的 history 模式，url 好看的单页面应用<br>所幸 github pages 在找不到会先默认进入 404.html，所以可以通过这个页面来重定向，解决这个问题</p>
+ <span id="more"></span>
+
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>用 vue 写了个静态页面，懒得弄服务器，所以直接部署在 github pages 上<br>用了 Vue Router，是个单页面应用，一般来说应该可以通过 url 直接进入 spa 的某页面<br>比如说 <code>https://sb6657.cn/search?s=ququ</code> 应该直接进搜索页搜索 ququ</p>
+<p>但是部署完发现直接白屏啥都没有，查了查原来是 github pages 没有默认处理路由，没有把所有请求都定向到 index.html 导致的<br>它会在遇到非<code>/</code>路由的时候直接去根目录找对应文件，找不到就重定向到 404.html，这个也没有的话就直接白屏了</p>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><h4 id="hash-路由"><a href="#hash-路由" class="headerlink" title="hash 路由"></a>hash 路由</h4><p>两个方案，第一是用 hash 路由，github pages 不会处理 hash 路由，所以能用，vue router 里开启 hash 模式就行了<br>不过 url 里带个#确实不好看也不好用，所以我不想用</p>
+<h4 id="在-404-html-中重定向"><a href="#在-404-html-中重定向" class="headerlink" title="在 404.html 中重定向"></a>在 404.html 中重定向</h4><p>方案二就是利用了找不到相应文件会进入 404.html 的特性，在这里记录输入 url，重定向回主页再操纵就行了。<br>要改的是，加一个 404.html，改一下 App.vue</p>
+<p>我用的 vue3 + vite + typescript，顺带解决一下页面部署之后不在根 url 的页面定向问题<br>所以还再加改一个 vite.config.ts</p>
+<h5 id="404-html"><a href="#404-html" class="headerlink" title="404.html"></a>404.html</h5><p>在<code>/public</code>里建一个 404.html，存当前 path 并重定向，如下</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;icon&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/favicon.ico&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/x-icon&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>YOUR TITLE<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">            <span class="comment">/**</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">             * 应对github page之类的部署单页面应用时，重定向错误问题</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">             * 这种遇到url会直接去根目录找对应文件，如果没有就直接进入404.html</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">             * 所以在404.html里暂存当前路径，然后重定向回首页，首页再改url就能实现单页面应用</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">             */</span></span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 如果你的页面访问路径是 www.xxx.com/projectname ,这里就填&#x27;/projectname&#x27;</span></span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 如果访问路径直接是 www.xxx.com根目录，就直接填&#x27;/&#x27;</span></span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 注意vite.config.ts也要相应更改</span></span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">const</span> projectName = <span class="string">&#x27;/projectname&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">let</span> relativePath = location.<span class="property">pathname</span>;</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 路径以项目名开头时，移除掉。不然会因为vite的处理，重复一次</span></span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">if</span> (relativePath.<span class="title function_">startsWith</span>(projectName)) &#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="comment">// 移除基础路径</span></span></span><br><span class="line"><span class="language-javascript">                relativePath = relativePath.<span class="title function_">substring</span>(projectName.<span class="property">length</span>);</span></span><br><span class="line"><span class="language-javascript">            &#125;</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 添加查询字符串</span></span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">search</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">                relativePath += <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">search</span>;</span></span><br><span class="line"><span class="language-javascript">            &#125;</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 保存最终的路径到sessionStorage，用于SPA中的重定向</span></span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">sessionStorage</span>.<span class="title function_">setItem</span>(<span class="string">&#x27;redirect&#x27;</span>, relativePath);</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 重定向到基础路径</span></span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = projectName;</span></span><br><span class="line"><span class="language-javascript">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="App-vue"><a href="#App-vue" class="headerlink" title="App.vue"></a>App.vue</h5><p>改 App.vue，在页面加载之前，获取之前 404.html 里存的路径，在这再改回去</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; useRouter &#125; <span class="keyword">from</span> <span class="string">&#x27;vue-router&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; onBeforeMount &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"><span class="comment">// 应对github page之类的重定向，实现部署spa能用url查询定向</span></span><br><span class="line"><span class="keyword">const</span> redirect = <span class="variable language_">sessionStorage</span>.<span class="title function_">getItem</span>(<span class="string">&#x27;redirect&#x27;</span>);</span><br><span class="line"><span class="title function_">onBeforeMount</span>(<span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (redirect) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;重定向到&#x27;</span>, redirect);</span><br><span class="line">        <span class="keyword">await</span> <span class="title function_">useRouter</span>().<span class="title function_">push</span>(redirect);</span><br><span class="line">        <span class="variable language_">sessionStorage</span>.<span class="title function_">removeItem</span>(<span class="string">&#x27;redirect&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="vite-config-ts"><a href="#vite-config-ts" class="headerlink" title="vite.config.ts"></a>vite.config.ts</h5><p>这里解决一下不是根目录的 url 部署页面的问题<br>如之前的注释，如果页面访问路径是 <code>www.xxx.com/projectname</code> ,这里就填<code>&#39;/projectname/&#39;</code><br>如果访问路径直接是 <code>www.xxx.com</code>根目录，就直接填<code>&#39;/&#39;</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">    <span class="attr">base</span>: <span class="string">&#x27;/projectname/&#x27;</span>,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>注：不写 base 属性的话，默认值是<code>&#39;/&#39;</code></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>利用 404.html 里保存了当前的路径，本地暂存下，传给 Vue，再改 url 就不被 github pages 限制了</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-02-23T22:03:54+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年2月23日</p>
+  </a>
 </div>
 
-          </div>
         
       
+        
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：4 分钟</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-  </section>
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wishao.fun/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/&title=解决github pages部署vue单页面应用url定向错误问题 - WiSHao'blog&summary=github pages 在遇到根目录之外的 url，会直接去根目录找对应文件，找不到就 404这和期望部署的单页面 app 是不符的，我还是希望能用 vue router 的 history 模式，url 好看的单页面应用所幸 github pages 在找不到会先默认进入 404.html，所以可以通过这个页面来重定向，解决这个问题"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://wishao.fun/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/&title=解决github pages部署vue单页面应用url定向错误问题 - WiSHao'blog&summary=github pages 在遇到根目录之外的 url，会直接去根目录找对应文件，找不到就 404这和期望部署的单页面 app 是不符的，我还是希望能用 vue router 的 history 模式，url 好看的单页面应用所幸 github pages 在找不到会先默认进入 404.html，所以可以通过这个页面来重定向，解决这个问题"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://wishao.fun/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/&title=解决github pages部署vue单页面应用url定向错误问题 - WiSHao'blog&summary=github pages 在遇到根目录之外的 url，会直接去根目录找对应文件，找不到就 404这和期望部署的单页面 app 是不符的，我还是希望能用 vue router 的 history 模式，url 好看的单页面应用所幸 github pages 在找不到会先默认进入 404.html，所以可以通过这个页面来重定向，解决这个问题"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%89%8D%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>前端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/vue/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>vue</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/vite/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>vite</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/github/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>github</p></a></div>
+  <span hidden itemprop="keywords">前端 vue vite github</span>
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/12/20/%E8%A7%A3%E5%86%B3%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98/'>
+          <p class='title'>解决滚动穿透问题<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>uni-app 编译到支付宝小程序，滚动穿透问题解决通用解决，解决了弹窗和根组件同时可以滚动，但是只想滚动弹窗而不想根组件跟着滚动的情况
+ 
+
+问题因为在做 uniapp 编译到支付宝小程序，用...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2490,230 +2695,52 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>WiSHao</h2>
-        
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:wishao8257@gmail.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/9WiSHao"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://osu.ppy.sh/users/18025476"
-              class="social fa-regular fa-circle flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://twitter.com/9WiSHao"
-              class="social fab fa-twitter flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/web%E5%89%8D%E7%AB%AF/" href="/categories/web%E5%89%8D%E7%AB%AF/"
-            active-action="action-categorieswebE5898DE7ABAF"
-            ><div class='name'>web前端</div><div class='badge'>(12)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/TypeScript%E5%AD%A6%E4%B9%A0/" href="/categories/web%E5%89%8D%E7%AB%AF/TypeScript%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categorieswebE5898DE7ABAFTypeScriptE5ADA6E4B9A0"
-            ><div class='name'>TypeScript学习</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/html5%E6%B8%B8%E6%88%8F/" href="/categories/web%E5%89%8D%E7%AB%AF/html5%E6%B8%B8%E6%88%8F/"
-            active-action="action-categorieswebE5898DE7ABAFhtml5E6B8B8E6888F"
-            ><div class='name'>html5游戏</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/react%E5%AD%A6%E4%B9%A0/" href="/categories/web%E5%89%8D%E7%AB%AF/react%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categorieswebE5898DE7ABAFreactE5ADA6E4B9A0"
-            ><div class='name'>react学习</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/" href="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categorieswebE5898DE7ABAFvueE5ADA6E4B9A0"
-            ><div class='name'>vue学习</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/%E5%85%AB%E8%82%A1%E6%96%87/" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%85%AB%E8%82%A1%E6%96%87/"
-            active-action="action-categorieswebE5898DE7ABAFE585ABE882A1E69687"
-            ><div class='name'>八股文</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/"
-            active-action="action-categorieswebE5898DE7ABAFE58E9FE7949Fjs"
-            ><div class='name'>原生js</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"
-            active-action="action-categorieswebE5898DE7ABAFE5B08FE7A88BE5BA8F"
-            ><div class='name'>小程序</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%BB%BA%E7%AB%99%E4%B9%8B%E5%88%9D/" href="/categories/%E5%BB%BA%E7%AB%99%E4%B9%8B%E5%88%9D/"
-            active-action="action-categoriesE5BBBAE7AB99E4B98BE5889D"
-            ><div class='name'>建站之初</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/" href="/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"
-            active-action="action-categoriesE79E8EE68A98E885BE"
-            ><div class='name'>瞎折腾</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/Windows%E8%B0%83%E6%95%99/" href="/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/Windows%E8%B0%83%E6%95%99/"
-            active-action="action-categoriesE79E8EE68A98E885BEWindowsE8B083E69599"
-            ><div class='name'>Windows调教</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/TypeScript/" style="font-size: 16.86px; color: #868686">TypeScript</a> <a href="/tags/Windows10/" style="font-size: 14px; color: #999">Windows10</a> <a href="/tags/Windows11%EF%BC%8CDefender/" style="font-size: 14px; color: #999">Windows11，Defender</a> <a href="/tags/canvas/" style="font-size: 14px; color: #999">canvas</a> <a href="/tags/github/" style="font-size: 14px; color: #999">github</a> <a href="/tags/react/" style="font-size: 14px; color: #999">react</a> <a href="/tags/uni-app/" style="font-size: 15.43px; color: #8f8f8f">uni-app</a> <a href="/tags/vite/" style="font-size: 14px; color: #999">vite</a> <a href="/tags/vue/" style="font-size: 19.71px; color: #727272">vue</a> <a href="/tags/%E5%85%AB%E8%82%A1%E6%96%87/" style="font-size: 14px; color: #999">八股文</a> <a href="/tags/%E5%85%B3%E9%97%AD/" style="font-size: 14px; color: #999">关闭</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 24px; color: #555">前端</a> <a href="/tags/%E5%8E%9F%E7%94%9Fjs/" style="font-size: 18.29px; color: #7c7c7c">原生js</a> <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 15.43px; color: #8f8f8f">小程序</a> <a href="/tags/%E5%B0%8F%E8%BD%AF%E4%BB%B6/" style="font-size: 14px; color: #999">小软件</a> <a href="/tags/%E6%89%8B%E5%86%99%E8%BF%98%E5%8E%9F/" style="font-size: 16.86px; color: #868686">手写还原</a> <a href="/tags/%E6%8B%BE%E9%81%97/" style="font-size: 14px; color: #999">拾遗</a> <a href="/tags/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 15.43px; color: #8f8f8f">支付宝小程序</a> <a href="/tags/%E6%9A%91%E5%81%87%E5%9F%B9%E8%AE%AD/" style="font-size: 21.14px; color: #686868">暑假培训</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 14px; color: #999">游戏</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 22.57px; color: #5f5f5f">笔记</a> <a href="/tags/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/" style="font-size: 14px; color: #999">紧急事件</a> <a href="/tags/%E8%87%AA%E5%AD%A6/" style="font-size: 18.29px; color: #7c7c7c">自学</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>15 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-02-23 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile webinfo " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3"><span class="toc-text">解决</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#hash-%E8%B7%AF%E7%94%B1"><span class="toc-text">hash 路由</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8-404-html-%E4%B8%AD%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-text">在 404.html 中重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#404-html"><span class="toc-text">404.html</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#App-vue"><span class="toc-text">App.vue</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#vite-config-ts"><span class="toc-text">vite.config.ts</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2737,13 +2764,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3495,7 +3523,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WiSHao'blog","url":"http://wishao.fun/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/","sameAs":["https://github.com/volantis-x"],"description":"终于开始记点东西"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://wishao.fun/","name":"WiSHao'blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.fun/categories/react学习/","name":"react学习"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WiSHao'blog","url":"http://wishao.fun/","keywords":null,"description":"终于开始记点东西","author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/","description":"终于开始记点东西"},"publisher":{"@type":"Organization","name":"WiSHao'blog","url":"http://wishao.fun/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://wishao.fun?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"终于开始记点东西","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/"},"publisher":{"@type":"Organization","name":"WiSHao'blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WiSHao'blog","url":"http://wishao.fun/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/","sameAs":["https://github.com/volantis-x"],"description":"终于开始记点东西"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://wishao.fun/","name":"WiSHao'blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.fun/categories/web前端/","name":"web前端"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.fun/categories/web前端/vue学习/","name":"vue学习"}},{"@type":"ListItem","position":3,"item":{"@id":"http://wishao.fun/2024/02/23/解决github-pages部署vue单页面应用url定向错误问题/","name":"解决github pages部署vue单页面应用url定向错误问题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WiSHao'blog","url":"http://wishao.fun/","keywords":null,"description":"终于开始记点东西","author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/","description":"终于开始记点东西"},"publisher":{"@type":"Organization","name":"WiSHao'blog","url":"http://wishao.fun/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://wishao.fun?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"解决github pages部署vue单页面应用url定向错误问题","description":"github pages 在遇到根目录之外的 url，会直接去根目录找对应文件，找不到就 404这和期望部署的单页面 app 是不符的，我还是希望能用 vue router 的 history 模式，url 好看的单页面应用所幸 github pages 在找不到会先默认进入 404.html，所以可以通过这个页面来重定向，解决这个问题","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://wishao.fun/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/"},"author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/"},"publisher":{"@type":"Organization","name":"WiSHao'blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://wishao.fun/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/","wordCount":169,"datePublished":"2024-02-23T13:18:37.000Z","dateModified":"2024-02-23T14:03:54.532Z","articleSection":"web前端","keywords":"前端,vue,vite,github","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
