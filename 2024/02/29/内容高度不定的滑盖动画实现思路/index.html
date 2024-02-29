@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://wishao.fun/tags/原生js/"/>
+  
+  <link rel="canonical" href="http://wishao.fun/2024/02/29/内容高度不定的滑盖动画实现思路/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,26 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：原生js - WiSHao'blog</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="终于开始记点东西 - WiSHao - WiSHao'blog">
+  <title>内容高度不定的滑盖动画实现思路 - WiSHao'blog</title>
+  <meta name="keywords" content="前端,原生h5,笔记,vue,TypeScript,css,null">
+  <meta desc name="description" content="设计了一个标签页，包括选中的标签和待选的标签。待选标签数量不定，屏幕宽度也不定，所以承载的地方高度不定。希望实现一个盖住待选标签的盖子，能上下滑动，完全盖住待选标签或者露出来 - WiSHao - WiSHao'blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="WiSHao&#39;blog">
-<meta property="og:url" content="http://wishao.fun/tags/%E5%8E%9F%E7%94%9Fjs/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="内容高度不定的滑盖动画实现思路">
+<meta property="og:url" content="http://wishao.fun/2024/02/29/%E5%86%85%E5%AE%B9%E9%AB%98%E5%BA%A6%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%BB%91%E7%9B%96%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/index.html">
 <meta property="og:site_name" content="WiSHao&#39;blog">
-<meta property="og:description" content="终于开始记点东西">
+<meta property="og:description" content="设计了一个标签页，包括选中的标签和待选的标签。待选标签数量不定，屏幕宽度也不定，所以承载的地方高度不定。希望实现一个盖住待选标签的盖子，能上下滑动，完全盖住待选标签或者露出来">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-02-29T05:02:40.000Z">
+<meta property="article:modified_time" content="2024-02-29T07:25:04.773Z">
 <meta property="article:author" content="WiSHao">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="原生h5">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="TypeScript">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2324,7 +2332,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/img/%E6%88%91%E4%BD%9B%E6%85%88%E6%82%B2.jpg"></div>
 
@@ -2385,31 +2393,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://wishao.fun/2023/07/21/初识canvas/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://wishao.fun/2024/02/29/内容高度不定的滑盖动画实现思路/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="WiSHao'blog">
   </span>
@@ -2418,295 +2404,291 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="终于开始记点东西">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/21/%E5%88%9D%E8%AF%86canvas/"  itemprop="url">
-        初识canvas
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <p>为了还原小时候玩过的一个 flash 游戏，决定学点 html5 游戏制作。找了个外网教程，先从 canvas 元素开始</p>
+    
+      <h1 class="title" itemprop="name headline">
+        内容高度不定的滑盖动画实现思路
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">WiSHao</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/">vue学习</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">vue学习</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg">
-            <meta itemprop="name" content="WiSHao">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-21T19:44:02+08:00">2023-07-21</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/html5%E6%B8%B8%E6%88%8F/">html5游戏</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/html5%E6%B8%B8%E6%88%8F/" itemprop="url"><span itemprop="name">html5游戏</span></a>
-            </span>
+
+
           
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-02-29T13:02:40+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年2月29日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：952 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：3 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-        <div>
-          <a class='readmore' href='/2023/07/21/%E5%88%9D%E8%AF%86canvas/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+      <span id="lc-pv" data-title="内容高度不定的滑盖动画实现思路" data-path="/2024/02/29/%E5%86%85%E5%AE%B9%E9%AB%98%E5%BA%A6%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%BB%91%E7%9B%96%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>设计了一个标签页，包括选中的标签和待选的标签。<br>待选标签数量不定，屏幕宽度也不定，所以承载的地方高度不定。<br>希望实现一个盖住待选标签的盖子，能上下滑动，完全盖住待选标签或者露出来</p>
+ <span id="more"></span>
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在做 6657 超级大爆的时候，设计了一个标签选择来筛选分类的页面。<br>标签分为已选和未选，然后下面的具体显示内容作为一个盖子盖住未选标签，盖子可以完全盖住或者完全露出来</p>
+<p>大概如原型图所示<br><strong>滑盖未划开，完全盖住待选:</strong><br><img src="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/img/sb6657_prototype1.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/img/sb6657_prototype1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="sb6657_prototype"></p>
+<p><strong>滑盖划开，完全露出待选:</strong><br><img src="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/img/sb6657_prototype2.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/img/sb6657_prototype2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="sb6657_prototype"></p>
+<p>难点在于标签数量不定，屏幕宽度不定导致的换行不定，所以未选标签部分的高度不定<br>那么上面的盖子完全盖住或者露出移动的距离就不定了<br>并且我希望有过渡动画，盖子很丝滑的盖住或者露出。</p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><h3 id="纯-css-行不通"><a href="#纯-css-行不通" class="headerlink" title="纯 css 行不通"></a>纯 css 行不通</h3><p>一开始想完全用 css 实现，想了半天，不定的话可以把待选和盖子放一个 div 里，<br>切换盖子绝对定位和普通定位的流式布局，来实现盖住或者完全露出</p>
+<p>但是这么弄就没过渡动画了，只有某属性的直接变化才能做 translation 过渡</p>
+<p>然后想的就是待选标签盒子高度从 0 和 auto 变化，里面东西不能露出外部，这样确实有过渡了，看起来可行<br>但是从内部撑开的 auto 高度没法直接设置，它数值不定弄不了，没有数据驱动的 vue 式方法可用，<br>并且不定的 auto 高度 css 过渡处理不了，css 过渡本质上只能处理固定数值变化</p>
+<p>那么看来只能使用操纵 dom 的方式了</p>
+<p>这么做的话完全就是原生 h5 的解决方案，我归类成 vue 单纯因为式写 vue 时候遇到的问题</p>
+<h3 id="操作-DOM-实现"><a href="#操作-DOM-实现" class="headerlink" title="操作 DOM 实现"></a>操作 DOM 实现</h3><p>DOM 有个<code>scrollHeight</code>属性，是内部元素实际所占高度。如果溢出或者内部被隐藏也是实际的高度。<br>那么获取装待选标签 div 的<code>scrollHeight</code>，用它和 0px 来回实时赋值 height，css 里写上过渡，就实现了丝滑的滑盖动画<br>意外挺简单</p>
+<p>不过注意一下要把待选标签承载盒子的溢出设置为隐藏</p>
+<h2 id="大致实现代码"><a href="#大致实现代码" class="headerlink" title="大致实现代码"></a>大致实现代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tags&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tag1&quot;</span> <span class="attr">v-for</span>=<span class="string">&quot;(item, index) in currentTags&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;index&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;meme-and-tag&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;more-tags&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;moreTagsDom&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;line&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tag1&quot;</span> <span class="attr">v-for</span>=<span class="string">&quot;(item, index) in moreTags&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;index&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;list&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;handle&quot;</span> <span class="attr">src</span>=<span class="string">&quot;@/assets/icon/downArrow.png&quot;</span> @<span class="attr">click</span>=<span class="string">&quot;slideList&quot;</span> /&gt;</span></span><br><span class="line">        这里是显示的分类数据，反正这里就是当滑盖用</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.more-tags</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> tagSelecting = ref&lt;<span class="built_in">boolean</span>&gt;(<span class="literal">false</span>);</span><br><span class="line"><span class="keyword">const</span> moreTagsDom = ref&lt;<span class="title class_">HTMLElement</span>&gt;() <span class="keyword">as</span> <span class="title class_">Ref</span>&lt;<span class="title class_">HTMLElement</span>&gt;;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">slideList</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (tagSelecting.<span class="property">value</span>) &#123;</span><br><span class="line">        moreTagsDom.<span class="property">value</span>.<span class="property">style</span>.<span class="property">height</span> = <span class="string">&#x27;0px&#x27;</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        moreTagsDom.<span class="property">value</span>.<span class="property">style</span>.<span class="property">height</span> = <span class="string">`<span class="subst">$&#123;moreTagsDom.value.scrollHeight&#125;</span>px`</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    tagSelecting.<span class="property">value</span> = !tagSelecting.<span class="property">value</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>自从写了小程序的 uni-app 之后，有点不敢操作 DOM 了，啥都想首先用 vue 式的数据驱动实现，毕竟小程序的 DOM 操纵是个残废，更多的时候完全用不了，只能不用，有种便秘拉不出来的感觉</p>
+<p>还是浏览器的前端写着爽，api 又多又全，vue 实现不了的直接干原生 h5</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-02-29T15:25:04+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年2月29日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://wishao.fun/2023/07/12/前端零碎拾遗/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="WiSHao'blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="WiSHao'blog">
-    <meta itemprop="description" content="终于开始记点东西">
-  </span>
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：952 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：3 分钟</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wishao.fun/2024/02/29/%E5%86%85%E5%AE%B9%E9%AB%98%E5%BA%A6%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%BB%91%E7%9B%96%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/&title=内容高度不定的滑盖动画实现思路 - WiSHao'blog&summary=设计了一个标签页，包括选中的标签和待选的标签。待选标签数量不定，屏幕宽度也不定，所以承载的地方高度不定。希望实现一个盖住待选标签的盖子，能上下滑动，完全盖住待选标签或者露出来"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://wishao.fun/2024/02/29/%E5%86%85%E5%AE%B9%E9%AB%98%E5%BA%A6%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%BB%91%E7%9B%96%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/&title=内容高度不定的滑盖动画实现思路 - WiSHao'blog&summary=设计了一个标签页，包括选中的标签和待选的标签。待选标签数量不定，屏幕宽度也不定，所以承载的地方高度不定。希望实现一个盖住待选标签的盖子，能上下滑动，完全盖住待选标签或者露出来"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://wishao.fun/2024/02/29/%E5%86%85%E5%AE%B9%E9%AB%98%E5%BA%A6%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%BB%91%E7%9B%96%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/&title=内容高度不定的滑盖动画实现思路 - WiSHao'blog&summary=设计了一个标签页，包括选中的标签和待选的标签。待选标签数量不定，屏幕宽度也不定，所以承载的地方高度不定。希望实现一个盖住待选标签的盖子，能上下滑动，完全盖住待选标签或者露出来"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%89%8D%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>前端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%8E%9F%E7%94%9Fh5/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>原生h5</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>笔记</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/vue/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>vue</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/TypeScript/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>TypeScript</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/css/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>css</p></a></div>
+  <span hidden itemprop="keywords">前端 原生h5 笔记 vue TypeScript css</span>
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/02/23/%E8%A7%A3%E5%86%B3github-pages%E9%83%A8%E7%BD%B2vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8url%E5%AE%9A%E5%90%91%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/'>
+          <p class='title'>解决github pages部署vue单页面应用url定向错误问题<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>github pages 在遇到根目录之外的 url，会直接去根目录找对应文件，找不到就 404这和期望部署的单页面 app 是不符的，我还是希望能用 vue router 的 history ...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2024/02/29/%E5%86%85%E5%AE%B9%E9%AB%98%E5%BA%A6%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%BB%91%E7%9B%96%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/12/%E5%89%8D%E7%AB%AF%E9%9B%B6%E7%A2%8E%E6%8B%BE%E9%81%97/"  itemprop="url">
-        前端零碎拾遗
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>汇总下写着写着突然又想起来或者才听说的东西</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg">
-            <meta itemprop="name" content="WiSHao">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-12T21:45:00+08:00">2023-07-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/">原生js</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/" itemprop="url"><span itemprop="name">原生js</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/07/12/%E5%89%8D%E7%AB%AF%E9%9B%B6%E7%A2%8E%E6%8B%BE%E9%81%97/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://wishao.fun/2023/07/12/Redux状态管理/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="WiSHao'blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="WiSHao'blog">
-    <meta itemprop="description" content="终于开始记点东西">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/12/Redux%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/"  itemprop="url">
-        Redux状态管理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>为了深入理解 Redux 状态管理工具，手写一个简化的（也是作业）</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg">
-            <meta itemprop="name" content="WiSHao">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-12T21:36:33+08:00">2023-07-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/">原生js</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/" itemprop="url"><span itemprop="name">原生js</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/07/12/Redux%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://wishao.fun/2023/07/11/js基础复习/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="WiSHao'blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="WiSHao'blog">
-    <meta itemprop="description" content="终于开始记点东西">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/11/js%E5%9F%BA%E7%A1%80%E5%A4%8D%E4%B9%A0/"  itemprop="url">
-        js基础复习
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>复习原生 js 知识</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg">
-            <meta itemprop="name" content="WiSHao">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-11T20:30:37+08:00">2023-07-11</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="sep"></span><a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%85%AB%E8%82%A1%E6%96%87/">八股文</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">web前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/web%E5%89%8D%E7%AB%AF/%E5%85%AB%E8%82%A1%E6%96%87/" itemprop="url"><span itemprop="name">八股文</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/07/11/js%E5%9F%BA%E7%A1%80%E5%A4%8D%E4%B9%A0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2715,230 +2697,52 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/9WiSHao/AnythingStorage/avatar/pinkzsers.jpeg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>WiSHao</h2>
-        
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:wishao8257@gmail.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/9WiSHao"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://osu.ppy.sh/users/18025476"
-              class="social fa-regular fa-circle flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://twitter.com/9WiSHao"
-              class="social fab fa-twitter flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/web%E5%89%8D%E7%AB%AF/" href="/categories/web%E5%89%8D%E7%AB%AF/"
-            active-action="action-categorieswebE5898DE7ABAF"
-            ><div class='name'>web前端</div><div class='badge'>(13)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/TypeScript%E5%AD%A6%E4%B9%A0/" href="/categories/web%E5%89%8D%E7%AB%AF/TypeScript%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categorieswebE5898DE7ABAFTypeScriptE5ADA6E4B9A0"
-            ><div class='name'>TypeScript学习</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/html5%E6%B8%B8%E6%88%8F/" href="/categories/web%E5%89%8D%E7%AB%AF/html5%E6%B8%B8%E6%88%8F/"
-            active-action="action-categorieswebE5898DE7ABAFhtml5E6B8B8E6888F"
-            ><div class='name'>html5游戏</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/react%E5%AD%A6%E4%B9%A0/" href="/categories/web%E5%89%8D%E7%AB%AF/react%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categorieswebE5898DE7ABAFreactE5ADA6E4B9A0"
-            ><div class='name'>react学习</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/" href="/categories/web%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categorieswebE5898DE7ABAFvueE5ADA6E4B9A0"
-            ><div class='name'>vue学习</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/%E5%85%AB%E8%82%A1%E6%96%87/" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%85%AB%E8%82%A1%E6%96%87/"
-            active-action="action-categorieswebE5898DE7ABAFE585ABE882A1E69687"
-            ><div class='name'>八股文</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/"
-            active-action="action-categorieswebE5898DE7ABAFE58E9FE7949Fjs"
-            ><div class='name'>原生js</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/web%E5%89%8D%E7%AB%AF/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" href="/categories/web%E5%89%8D%E7%AB%AF/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"
-            active-action="action-categorieswebE5898DE7ABAFE5B08FE7A88BE5BA8F"
-            ><div class='name'>小程序</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%BB%BA%E7%AB%99%E4%B9%8B%E5%88%9D/" href="/categories/%E5%BB%BA%E7%AB%99%E4%B9%8B%E5%88%9D/"
-            active-action="action-categoriesE5BBBAE7AB99E4B98BE5889D"
-            ><div class='name'>建站之初</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/" href="/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"
-            active-action="action-categoriesE79E8EE68A98E885BE"
-            ><div class='name'>瞎折腾</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/Windows%E8%B0%83%E6%95%99/" href="/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/Windows%E8%B0%83%E6%95%99/"
-            active-action="action-categoriesE79E8EE68A98E885BEWindowsE8B083E69599"
-            ><div class='name'>Windows调教</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Defender/" style="font-size: 14px; color: #999">Defender</a> <a href="/tags/TypeScript/" style="font-size: 19px; color: #777">TypeScript</a> <a href="/tags/Windows10/" style="font-size: 14px; color: #999">Windows10</a> <a href="/tags/Windows11/" style="font-size: 14px; color: #999">Windows11</a> <a href="/tags/canvas/" style="font-size: 14px; color: #999">canvas</a> <a href="/tags/css/" style="font-size: 15.67px; color: #8e8e8e">css</a> <a href="/tags/github/" style="font-size: 14px; color: #999">github</a> <a href="/tags/html/" style="font-size: 14px; color: #999">html</a> <a href="/tags/react/" style="font-size: 14px; color: #999">react</a> <a href="/tags/uni-app/" style="font-size: 15.67px; color: #8e8e8e">uni-app</a> <a href="/tags/vite/" style="font-size: 14px; color: #999">vite</a> <a href="/tags/vue/" style="font-size: 20.67px; color: #6c6c6c">vue</a> <a href="/tags/%E5%85%AB%E8%82%A1%E6%96%87/" style="font-size: 14px; color: #999">八股文</a> <a href="/tags/%E5%85%B3%E9%97%AD/" style="font-size: 14px; color: #999">关闭</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 24px; color: #555">前端</a> <a href="/tags/%E5%8E%9F%E7%94%9Fh5/" style="font-size: 19px; color: #777">原生h5</a> <a href="/tags/%E5%8E%9F%E7%94%9Fjs/" style="font-size: 19px; color: #777">原生js</a> <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 15.67px; color: #8e8e8e">小程序</a> <a href="/tags/%E5%B0%8F%E8%BD%AF%E4%BB%B6/" style="font-size: 14px; color: #999">小软件</a> <a href="/tags/%E6%89%8B%E5%86%99%E8%BF%98%E5%8E%9F/" style="font-size: 17.33px; color: #828282">手写还原</a> <a href="/tags/%E6%8B%BE%E9%81%97/" style="font-size: 14px; color: #999">拾遗</a> <a href="/tags/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 15.67px; color: #8e8e8e">支付宝小程序</a> <a href="/tags/%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD/" style="font-size: 20.67px; color: #6c6c6c">暑假集训</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 14px; color: #999">游戏</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 22.33px; color: #606060">笔记</a> <a href="/tags/%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6/" style="font-size: 14px; color: #999">紧急事件</a> <a href="/tags/%E8%87%AA%E5%AD%A6/" style="font-size: 19px; color: #777">自学</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>16 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-02-29 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile webinfo " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3"><span class="toc-text">解决</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%AF-css-%E8%A1%8C%E4%B8%8D%E9%80%9A"><span class="toc-text">纯 css 行不通</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C-DOM-%E5%AE%9E%E7%8E%B0"><span class="toc-text">操作 DOM 实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E8%87%B4%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81"><span class="toc-text">大致实现代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E8%AF%9D"><span class="toc-text">后话</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2962,13 +2766,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3720,7 +3525,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WiSHao'blog","url":"http://wishao.fun/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/","sameAs":["https://github.com/volantis-x"],"description":"终于开始记点东西"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://wishao.fun/","name":"WiSHao'blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.fun/tags/原生js/","name":"原生js"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WiSHao'blog","url":"http://wishao.fun/","keywords":null,"description":"终于开始记点东西","author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/","description":"终于开始记点东西"},"publisher":{"@type":"Organization","name":"WiSHao'blog","url":"http://wishao.fun/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://wishao.fun?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"终于开始记点东西","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/"},"publisher":{"@type":"Organization","name":"WiSHao'blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WiSHao'blog","url":"http://wishao.fun/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/","sameAs":["https://github.com/volantis-x"],"description":"终于开始记点东西"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://wishao.fun/","name":"WiSHao'blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.fun/categories/web前端/","name":"web前端"}},{"@type":"ListItem","position":2,"item":{"@id":"http://wishao.fun/categories/web前端/vue学习/","name":"vue学习"}},{"@type":"ListItem","position":3,"item":{"@id":"http://wishao.fun/2024/02/29/内容高度不定的滑盖动画实现思路/","name":"内容高度不定的滑盖动画实现思路"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WiSHao'blog","url":"http://wishao.fun/","keywords":null,"description":"终于开始记点东西","author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/","description":"终于开始记点东西"},"publisher":{"@type":"Organization","name":"WiSHao'blog","url":"http://wishao.fun/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://wishao.fun?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"内容高度不定的滑盖动画实现思路","description":"设计了一个标签页，包括选中的标签和待选的标签。待选标签数量不定，屏幕宽度也不定，所以承载的地方高度不定。希望实现一个盖住待选标签的盖子，能上下滑动，完全盖住待选标签或者露出来","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://wishao.fun/2024/02/29/%E5%86%85%E5%AE%B9%E9%AB%98%E5%BA%A6%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%BB%91%E7%9B%96%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/"},"author":{"@type":"Person","name":"WiSHao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://wishao.fun/"},"publisher":{"@type":"Organization","name":"WiSHao'blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://wishao.fun/2024/02/29/%E5%86%85%E5%AE%B9%E9%AB%98%E5%BA%A6%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%BB%91%E7%9B%96%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/","wordCount":87,"datePublished":"2024-02-29T05:02:40.000Z","dateModified":"2024-02-29T07:25:04.773Z","articleSection":"web前端","keywords":"前端,原生h5,笔记,vue,TypeScript,css","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
